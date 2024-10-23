@@ -4,4 +4,61 @@
 }
 body{
     background-color: #222;
+    min-height: 100vh;
+    margin: 0;
+}
+/* navbar */
+.navbar{
+ position: sticky;
+ top:0;
+ /* z-index: 1000; */
+ backdrop-filter: blur(4px);
+ background-color: rgba(34,34,34,0.25);
+}
+.nav-cont{
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+.nav-left{
+    display: flex;
+}
+.logo{
+    border: 50%;
+    margin: 0 1rem;
+}
+.nav-name{
+    font-size: 20px;
+    line-height: 1.5rem;
+    letter-spacing: 0.2rem;
+
+}
+.nav-right{
+    margin-left: auto;
+}
+.nav-item-cont{
+    display: flex;
+    /* js use korini ti ata dila wrap thkbe */
+    flex-wrap:wrap ;
+}
+.nav-items{
+    list-style-type: none;
+    margin: 1rem;
+}
+.nav-item-link{
+    text-decoration: none;
+    
+}
+
+.nav-item-link:hover{
+    color: rgb(54, 90, 247) ;
+}
+@media (max-width:873px) {
+    .nav-cont{
+        display: block;
+    }
+    .nav-item-cont{
+        padding: 0;
+    }
+    
 }
